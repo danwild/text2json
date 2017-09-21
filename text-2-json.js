@@ -62,3 +62,5 @@ function setHeaderRowAsKeys(line){
 function addKeys(line){
 	return _.object(keys, line);
 }
+
+module.exports = this;
