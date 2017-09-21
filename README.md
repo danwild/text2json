@@ -2,6 +2,10 @@
 
 Small CLI style node app to convert delimited `.txt` files into `.json`
 
+## install
+
+Install with npm: `npm install text-2-json`
+
 ## use
 
 Run from command line, takes three args:
@@ -55,7 +59,6 @@ Into:
 ]
 ```
 
-## install
+## parse multiple files
 
-Install with npm: `npm install text-2-json`
-
+Open command line and run: `sh parseMultipleFiles.sh`
