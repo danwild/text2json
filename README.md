@@ -1,4 +1,4 @@
-# text2json
+# text-2-json [![NPM version][npm-image]][npm-url] [![NPM Downloads][npm-downloads-image]][npm-url]
 
 Small CLI style node app to convert delimited `.txt` files into `.json`
 
@@ -62,3 +62,7 @@ Into:
 ## parse multiple files
 
 Open command line and run: `sh parseMultipleFiles.sh`
+
+[npm-image]: https://badge.fury.io/js/text-2-json.svg
+[npm-url]: https://www.npmjs.com/package/text-2-json
+[npm-downloads-image]: https://img.shields.io/npm/dt/text-2-json.svg	  
