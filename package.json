@@ -1,6 +1,6 @@
 {
 	"name": "text-2-json",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Convert delimited txt file to json",
 	"main": "index.js",
 	"scripts": {
