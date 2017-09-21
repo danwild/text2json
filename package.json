@@ -1,6 +1,6 @@
 {
 	"name": "text-2-json",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Convert delimited txt file to json",
 	"main": "index.js",
 	"scripts": {
@@ -18,6 +18,9 @@
 	],
 	"author": "danwild@y7mail.com",
 	"license": "ISC",
+	"bin": {
+		"text-2-json": "./index.js"
+	},
 	"dependencies": {
 		"split": "^1.0.0",
 		"underscore": "^1.8.3",

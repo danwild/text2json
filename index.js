@@ -1,9 +1,10 @@
-var fs = require('fs');
-var yargs = require('yargs').argv;
-var _ = require('underscore');
-var split = require('split');
+#!/usr/bin/env node
+const fs = require('fs');
+const yargs = require('yargs').argv;
+const _ = require('underscore');
+const split = require('split');
+let keys;
 
-var keys;
 
 if(yargs.i && yargs.o) {
 	readFile(yargs.i, (yargs.h == true));
@@ -62,5 +63,3 @@ function setHeaderRowAsKeys(line){
 function addKeys(line){
 	return _.object(keys, line);
 }
-
-module.exports = this;
