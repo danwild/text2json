@@ -7,14 +7,14 @@ let keys;
 
 
 if(yargs.i && yargs.o) {
-	readFile(yargs.i, (yargs.h == true));
+	readFile(yargs.i, (yargs.h == true), yargs.p? new RegExp(yargs.p, 'g') : new RegExp("[^\\n\\r\\t ]+",'g'));
 }
 else {
-	console.log("Expected --i=\<inputFile.txt\> --o=\<inputFile.txt\> --h\<optional use header flag\>");
+	console.log("Expected --i=\<inputFile.txt\> --o=\<inputFile.txt\> --h\<optional use header flag\> --p\<optional regex pattern to match field separator>");
 }
-
-function readFile(inPath, useHeader) {
-
+// /[^\t]+/g
+function readFile(inPath, useHeader, regex) {
+  console.log(regex)
 	var index = 0;
 	var outData = [];
 
@@ -22,7 +22,7 @@ function readFile(inPath, useHeader) {
 		.pipe(split())
 		.on('data', function (line) {
 
-			line = line.toString().match(/[^\r\n\t' ']+/g);
+			line = line.toString().match(regex);
 
 			if(line){
 
