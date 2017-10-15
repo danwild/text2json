@@ -8,7 +8,7 @@ Install with npm: `npm install text-2-json`
 
 ## use
 
-Run from command line, takes three args:
+Run from command line, takes four args:
 
 - `i`, the path of input txt file, e.g. "input/path/text.txt"
 - `o`, the path of output json file, e.g. "output/path/result.json"
