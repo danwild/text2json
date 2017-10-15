@@ -12,8 +12,8 @@ Run from command line, takes three args:
 
 - `i`, the path of input txt file, e.g. "input/path/text.txt"
 - `o`, the path of output json file, e.g. "output/path/result.json"
-- `h`, an optional flag indicating whether or not to use the first row of the file as object keys.
-- `p`, Regex pattern to match field separator. Ex: `[^\\t]+`
+- `h`, optional flag indicating whether or not to use the first row of the file as object keys.
+- `p`, optional Regex pattern to match field separator, e.g: `[^\\t]+`. Defaults to: `[^\\n\\r\\t ]+`
 
 Example:
 

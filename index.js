@@ -14,7 +14,7 @@ else {
 }
 // /[^\t]+/g
 function readFile(inPath, useHeader, regex) {
-  console.log(regex)
+
 	var index = 0;
 	var outData = [];
 
